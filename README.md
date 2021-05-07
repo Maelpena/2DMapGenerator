@@ -13,7 +13,7 @@ Elle permet la navigation dans la map (touche ZQSD), le zoom (Scroll) ainsi que 
 
 # Classe MapGenerator :
 
-La Classe MapGenerator demande un unique paramètre lors de sa construction : sa taille (map carré).
+La Classe MapGenerator demande un unique paramètre lors de sa construction : sa taille (map carré, minimum 100*100).
 Elle possède différente variables membre modifiable dans son constructeur qui permettent d'ajuster la carte notamment:
 
 m_noiseRate : Correspond à la fréquence du bruit qu'utilise toute la génération
