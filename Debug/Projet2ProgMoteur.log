@@ -1,0 +1,73 @@
+﻿  Display.cpp
+C:\Users\Mael\source\repos\Projet2ProgMoteur\Display.cpp(6,76): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\Mael\source\repos\Projet2ProgMoteur\Display.cpp(6,49): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\Mael\source\repos\Projet2ProgMoteur\Display.cpp(8,69): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\Mael\source\repos\Projet2ProgMoteur\Display.cpp(8,43): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\Mael\source\repos\Projet2ProgMoteur\Display.cpp(49,55): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Users\Mael\source\repos\Projet2ProgMoteur\Display.cpp(49,44): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Users\Mael\source\repos\Projet2ProgMoteur\Display.cpp(50,71): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Users\Mael\source\repos\Projet2ProgMoteur\Display.cpp(50,56): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+  main.cpp
+  MapGenerator.cpp
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(52,33): warning C4305: 'argument' : troncation de 'double' à 'float'
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(55,34): warning C4305: 'argument' : troncation de 'double' à 'float'
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(56,33): warning C4305: 'argument' : troncation de 'double' à 'float'
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(57,36): warning C4305: 'argument' : troncation de 'double' à 'float'
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(74,25): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(76,30): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(171,86): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(171,51): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(187,26): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(191,21): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(192,101): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(192,94): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(192,71): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(207,26): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(209,30): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(219,47): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(242,26): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(244,30): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(259,26): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(261,23): warning C4244: 'initialisation' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(276,30): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(293,26): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(299,41): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(317,26): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(319,23): warning C4244: 'initialisation' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(320,24): warning C4244: 'initialisation' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(323,30): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(327,30): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(342,25): warning C4244: 'initialisation' : conversion de 'double' en 'int', perte possible de données
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(343,24): warning C4244: 'initialisation' : conversion de 'double' en 'int', perte possible de données
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(365,26): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(416,26): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(418,30): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(420,23): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Mael\source\repos\Projet2ProgMoteur\MapGenerator.cpp(420,74): warning C4018: '<' : incompatibilité signed/unsigned
+  Projet2ProgMoteur.cpp
+  Génération de code en cours...
+  Projet2ProgMoteur.vcxproj -> C:\Users\Mael\source\repos\Projet2ProgMoteur\Debug\Projet2ProgMoteur.exe
