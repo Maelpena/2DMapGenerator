@@ -36,7 +36,6 @@ private:
 	std::vector<std::vector<int>> arrTileIndex;
 	int m_dungeonSize;
 
-
 	sf::Image m_groundTile;             //1
 	sf::Image m_grassTile;              //2
 	sf::Image m_stoneTile;              //3
@@ -60,7 +59,4 @@ private:
 	sf::Image m_brickBackgroundTile;	//21
 	sf::Image m_lavaBrickTile;			//22
 	sf::Image m_lavaBrickBackgroundTile;//23
-
-
-	sf::Clock m_deltaClock;
 };

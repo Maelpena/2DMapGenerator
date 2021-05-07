@@ -7,7 +7,7 @@
 
 int main()
 {
-	MapGenerator* map = new MapGenerator(200);
+	MapGenerator* map = new MapGenerator(301);
 	map->generate();
 	Display* display = new Display(map);
 	display->update();

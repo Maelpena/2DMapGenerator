@@ -5,9 +5,6 @@
 #include <iostream>
 #include <chrono>
 
-
-
-
 MapGenerator::MapGenerator(int cellCount) :m_cellCount(cellCount), m_cellSize(20), m_mapSize(m_cellCount* m_cellSize), m_noiseRate(0.06), m_seed(10), m_canSpawnTree(true), m_dungeonSize(5)
 {
     m_mapImage.create(m_mapSize, m_mapSize, sf::Color::Green);
@@ -43,11 +40,10 @@ MapGenerator::~MapGenerator()
 
 sf::Sprite MapGenerator::generate()
 {
-    sf::Time dt = m_deltaClock.getElapsedTime();
-    dt.asSeconds();
     long long t1 = std::chrono::high_resolution_clock::now().time_since_epoch().count();
     std::srand((unsigned int)t1);
     m_seed = rand() % 500;
+
     generateGround();
     generateOre(0.8, 1, 0.25f, 6);   //Diamond
     generateOre(0.5, 1, 0.2f, 4);    //Gold
@@ -60,9 +56,7 @@ sf::Sprite MapGenerator::generate()
     generateHell();
     generateDungeons();
 
-    std::cout << m_deltaClock.getElapsedTime().asMilliseconds() - dt.asMilliseconds() << std::endl;
     fillMapImage();
-    std::cout << m_deltaClock.getElapsedTime().asMilliseconds() - dt.asMilliseconds() << std::endl;
 
     m_mapTexture.loadFromImage(m_mapImage);
     m_mapSprite.setTexture(m_mapTexture);
@@ -169,18 +163,9 @@ void MapGenerator::fillMapImage()
 float MapGenerator::getPerlin(unsigned int i, unsigned int j, int noiseRateFactor, int seedFactor)
 {
     return stb_perlin_noise3_seed(i * m_noiseRate * noiseRateFactor, j * m_noiseRate * noiseRateFactor, 0, 0, 0, 0, m_seed * seedFactor) + 1;
-    
 }
 
-sf::Sprite MapGenerator::getMapSprite()
-{
-    return m_mapSprite;
-}
 
-int MapGenerator::getMapSize()
-{
-    return m_mapSize;
-}
 
 void MapGenerator::generateCaves()
 {
@@ -209,14 +194,7 @@ void MapGenerator::generateGround()
         for (size_t j = 0; j < m_cellCount; j++)
         {
             float perl = getPerlin(i, j, 4, 3);
-            float seuil;
-            if (j < 60) 
-                seuil = 1.3f;
-            else if (j < 120)
-                seuil = 1.f;
-            else
-                seuil = 0.8f;
-            seuil = j/float(m_cellCount) *1.3 + .5;
+            float seuil = j/float(m_cellCount) *1.3 + .5;
 
 
             if (perl > seuil)
@@ -272,7 +250,6 @@ void MapGenerator::generateSkyAndTrees()
                 arrTileIndex[i][heightMax] = 2;
             }
         }
-
         for (size_t j = 0; j < heightMax; j++)
         {
             if (arrTileIndex[i][j] != 7 && arrTileIndex[i][j] != 8)
@@ -334,7 +311,6 @@ void MapGenerator::generateHell()
 
 void MapGenerator::generateDungeons()
 {
-
     long long t1 = std::chrono::high_resolution_clock::now().time_since_epoch().count();
     std::srand((unsigned int)t1);
     for (size_t i = 0; i < floor(m_cellCount/20); i++)
@@ -365,6 +341,7 @@ void MapGenerator::spawnDungeon(int i, int j, int type)
     for (size_t k = 0; k < nbRoom; k++)
     {
         int newRoom = rand() % 4;
+
         switch (newRoom)
         {
         case 0:
@@ -372,7 +349,6 @@ void MapGenerator::spawnDungeon(int i, int j, int type)
             break;
         case 1:
             j = j - m_dungeonSize + 1;
-
             break;
         case 2:
             i = i + m_dungeonSize - 1;
@@ -409,6 +385,7 @@ void MapGenerator::spawnDungeonRoom(int i, int j, int type)
     case 4:
         tileType = 22;
         backgroundTileType = 23;
+        break;
     default:
         break;
     }
@@ -430,4 +407,14 @@ void MapGenerator::spawnDungeonRoom(int i, int j, int type)
             }
         }
     }
+}
+
+sf::Sprite MapGenerator::getMapSprite()
+{
+    return m_mapSprite;
+}
+
+int MapGenerator::getMapSize()
+{
+    return m_mapSize;
 }

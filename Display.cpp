@@ -3,12 +3,14 @@
 #include <iostream>
 
 Display::Display(MapGenerator* map) :m_screenSize(1000), m_window(sf::VideoMode(m_screenSize, m_screenSize), "Map Genarator"),
-m_view(sf::FloatRect(0, 0, m_window.getSize().x / 10, m_window.getSize().y / 10))
+m_view(sf::FloatRect(0, 0, m_window.getSize().x , m_window.getSize().y ))
 {
-    m_view.setCenter(m_window.getSize().x / 2, m_window.getSize().y / 2);
+
 	m_map = map;
     m_mapSize = map->getMapSize();
     m_moveSpeed = 0.5f;
+    m_view.setSize(m_mapSize, m_mapSize);
+    m_view.setCenter(m_mapSize / 2, m_mapSize / 2);
 }
 
 Display::~Display()
@@ -66,7 +68,6 @@ void Display::update()
             }
         }
 
-        //Deplacement
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && (m_view.getCenter().x + m_view.getSize().x / 2) < m_mapSize)
         {
             m_view.setCenter(m_view.getCenter().x + m_moveSpeed, m_view.getCenter().y);
