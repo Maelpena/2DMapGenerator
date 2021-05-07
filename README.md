@@ -17,4 +17,5 @@ La Classe MapGenerator demande un unique paramètre lors de sa construction : sa
 Elle possède différente variables membre modifiable dans son constructeur qui permettent d'ajuster la carte notamment:
 
 m_noiseRate : Correspond à la fréquence du bruit qu'utilise toute la génération
+
 m_dungeonSize : Correspond à la taille des donjons, (conserver un nombre impair de façon à garder des donjons symétriques)
