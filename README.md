@@ -2,13 +2,14 @@
 
 Générateur procédurale de map en 2d.
 Le projet utilise la library sfml pour l'affichage.
+WX
+![image](https://github.com/Maelpena/2DMapGenerator/assets/34342829/d698e3a8-963b-4aa5-b139-ec3f3a5c8388)
+
+![image](https://github.com/Maelpena/2DMapGenerator/assets/34342829/6da4f5d7-69cb-464e-a9fe-b7b32065d58d)
+
+![image](https://github.com/Maelpena/2DMapGenerator/assets/34342829/5180bf15-9adb-4802-aa48-032754a9a629)
 
 
-![image](https://github.com/Maelpena/2DMapGenerator/assets/34342829/6e3e5dea-eeb7-4702-8364-031a6bc2d0c2)
-
-![image](https://github.com/Maelpena/2DMapGenerator/assets/34342829/fb3530f2-2c55-4f63-9098-734abd270c04)
-
-ZZQDZSDQQ![image](https://github.com/Maelpena/2DMapGenerator/assets/34342829/a319f9b1-95fc-4f6f-b51d-a4fd030f9f6e)
 
 
 # Classe Display :
