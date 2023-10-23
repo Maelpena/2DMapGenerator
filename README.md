@@ -4,6 +4,10 @@ Générateur procédurale de map en 2d.
 Le projet utilise la library sfml pour l'affichage.
 
 
+![image](https://github.com/Maelpena/2DMapGenerator/assets/34342829/c72a96d0-919b-4476-85e1-cfd00d3191ec)
+
+
+
 
 ![image](https://github.com/Maelpena/2DMapGenerator/assets/34342829/6da4f5d7-69cb-464e-a9fe-b7b32065d58d)
 
